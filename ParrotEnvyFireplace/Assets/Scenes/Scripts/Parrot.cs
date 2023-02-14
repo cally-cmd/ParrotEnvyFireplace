@@ -31,6 +31,12 @@ public class Parrot : MonoBehaviour
             vertical *= limit;
         }
 
+        if (horizontal > 0) {
+            transform.localScale = new Vector3(-1, 1, 1);
+        } else if (horizontal < 0) {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+
         body.velocity = new Vector2(horizontal * speed, vertical * speed);
     }
 }
