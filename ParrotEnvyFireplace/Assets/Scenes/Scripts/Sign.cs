@@ -28,7 +28,7 @@ public class Sign : MonoBehaviour
     public void OnTriggerExit2D(Collider2D col) {
         print("Bye sign!");
         if (col.gameObject.CompareTag("Player")) {
-            GameManager.Instance.DialogHide(text);
+            GameManager.Instance.DialogHide();
         }
     }
 }
