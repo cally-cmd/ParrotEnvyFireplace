@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Birds : MonoBehaviour
 {
-
+    public string text;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class Birds : MonoBehaviour
 
     void OnMouseOver() {
         print("Test!");
+        GameManager.Instance.DialogShow(text);
         GameManager.Instance.conversed = true;
     }
 }

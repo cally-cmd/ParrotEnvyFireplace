@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5bb2e7584398743b5e5c9239085bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: Good evening Traveler, I am the bird king! Collect the wood!
 --- !u!50 &-7179670327372450359
 Rigidbody2D:
   serializedVersion: 4
