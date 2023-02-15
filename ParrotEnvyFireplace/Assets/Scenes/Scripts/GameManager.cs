@@ -32,13 +32,19 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(false);
     }
 
+    void StartGame() {
+        print("GameStart");
+        conversed = false;
+        dialogBox.SetActive(false);
+        audio = GetComponent<AudioSource>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         conversed = false;
         dialogBox.SetActive(false);
         audio = GetComponent<AudioSource>();
-        
     }
 
     // Update is called once per frame
@@ -61,8 +67,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(audio.clip.length);
     }
 
-    public void StartGame(){
-        button.gameObject.SetActive(false);
-        //StartCoroutine("Sound");
-}
+    // public void StartGame(){
+    //     button.gameObject.SetActive(false);
+    //     //StartCoroutine("Sound");
+    // }
 }

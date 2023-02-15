@@ -6,6 +6,8 @@ public class Wood : MonoBehaviour
 {
     public GameObject wood;
 
+    public GameObject sparkles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,8 @@ public class Wood : MonoBehaviour
     void OnTriggerEnter2D() {
         if (GameManager.Instance.conversed) {
             print("Collected");
-            wood.SetActive(false);
+            Destroy(wood);
+            Instantiate(sparkles);
         }
     }
 }

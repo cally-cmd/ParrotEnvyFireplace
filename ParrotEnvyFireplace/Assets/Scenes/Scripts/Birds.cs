@@ -21,5 +21,10 @@ public class Birds : MonoBehaviour
     void OnMouseOver() {
         GameManager.Instance.DialogShow(text);
         GameManager.Instance.conversed = true;
+        //Delay();
+    }
+
+    IEnumerator Delay() {
+        yield return new WaitForSeconds(10f);
     }
 }
