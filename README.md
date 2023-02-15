@@ -2,7 +2,7 @@
 
 ## Title
 
-The title of our game is `A Home for Parrot`!
+The title of our game is `Parrot King's Fire`!
 
 ## Intent
 
