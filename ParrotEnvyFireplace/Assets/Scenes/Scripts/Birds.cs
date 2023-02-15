@@ -19,9 +19,12 @@ public class Birds : MonoBehaviour
     }
 
     void OnMouseOver() {
+        if (GameManager.Instance.cantalk != true) {
+            GameManager.Instance.DialogHide();
+        } else {
         GameManager.Instance.DialogShow(text);
         GameManager.Instance.conversed = true;
-        //Delay();
+        }//Delay();
     }
 
     IEnumerator Delay() {

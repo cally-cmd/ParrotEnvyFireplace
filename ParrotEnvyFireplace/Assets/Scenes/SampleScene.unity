@@ -9905,8 +9905,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9941,7 +9941,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -748.1072, y: 0, z: -738.17566, w: 0}
+  m_margin: {x: 3.293396, y: 0, z: 3.2062988, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16244,6 +16244,7 @@ MonoBehaviour:
   collection: 0
   dialogBox: {fileID: 2025235378}
   text: {fileID: 209945369}
+  cantalk: 0
 --- !u!4 &1201485015
 Transform:
   m_ObjectHideFlags: 0
@@ -16270,7 +16271,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 65788a89627a1804b8a41abbca06b8f5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -33564,8 +33565,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: -958}
-  m_SizeDelta: {x: 3000, y: 100}
+  m_AnchoredPosition: {x: 0, y: -110}
+  m_SizeDelta: {x: 354.4916, y: 73.3319}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933411630
 MonoBehaviour:
@@ -33611,10 +33612,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: efd58f7ff6c09b149b2012e5458c0ec9, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 1201485014}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -33697,8 +33698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: -732.1363}
-  m_SizeDelta: {x: 3000, y: 207.7274}
+  m_AnchoredPosition: {x: 0.0000095367, y: 241}
+  m_SizeDelta: {x: 914.9976, y: 91.4844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025235380
 MonoBehaviour:

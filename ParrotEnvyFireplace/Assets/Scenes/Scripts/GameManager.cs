@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int collection;
     public GameObject dialogBox; // <a href=https://www.pngmart.com/image/53302 target="_blank">Text Box Frame PNG Transparent Image</a>
     public TextMeshProUGUI text;
+    public bool cantalk;
 
     public void DialogShow(string s) {
         dialogBox.SetActive(true);
@@ -40,11 +41,9 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(false);
     }
 
-    void StartGame() {
-        print("GameStart");
-        conversed = false;
-        dialogBox.SetActive(false);
-        audio = GetComponent<AudioSource>();
+    public void StartGame() {
+        cantalk = true;
+        button.gameObject.SetActive(false);
         pit.SetActive(false);
         fire.SetActive(false);
     }
@@ -76,12 +75,9 @@ public class GameManager : MonoBehaviour
 
     }
     IEnumerator Sound(){
+        yield return new WaitForSeconds(2f);
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
     }
 
-    // public void StartGame(){
-    //     button.gameObject.SetActive(false);
-    //     //StartCoroutine("Sound");
-    // }
 }
