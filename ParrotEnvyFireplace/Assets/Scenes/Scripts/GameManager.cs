@@ -7,9 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
     private AudioSource audio;
-
+    public GameObject button;
     public bool conversed;
-
     public GameObject dialogBox; // <a href=https://www.pngmart.com/image/53302 target="_blank">Text Box Frame PNG Transparent Image</a>
     public TextMeshProUGUI text;
 
@@ -39,7 +38,7 @@ public class GameManager : MonoBehaviour
         conversed = false;
         dialogBox.SetActive(false);
         audio = GetComponent<AudioSource>();
-        StartCoroutine("Sound");
+        
     }
 
     // Update is called once per frame
@@ -61,4 +60,9 @@ public class GameManager : MonoBehaviour
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
     }
+
+    public void StartGame(){
+        button.gameObject.SetActive(false);
+        //StartCoroutine("Sound");
+}
 }
