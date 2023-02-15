@@ -18,7 +18,7 @@ To move the parrot in the game you can use either WASD or the arrow keys. In ord
 
 ## Aesthetics
 
-**Insert aesthetics here**
+For this game we chose a tilemap that would allow for the village to look simple to look more welcoming since the parrot wants a home to come to. The signs have positive messages that are also meant to facilitate this feeling. We chose the dialog box and the start button sprites because it helps to pop out against the mostly green and brown background. While the sound is called dark clouds it is a relatively upbeat audio clip which gives the game a little more energy and intensity, the player is trying to collect the fire wood that it needs to build a fire to keep warm after all.
 
 ## Joys and Struggles
 
@@ -33,4 +33,4 @@ There are few things more frustrating than writing correct code to implement a f
 
 ## Contributions
 
-In this project I was responsible for the GameManager, Wood, Parrot, Bird, and FollowCam scripts. I also created most of the map, made the prefab for the sign and other parrots, and added to the wood prefabs. I made the trail and particle systems and found the image for the dialog box. Taryn made the wood prefab, found the tilemap, audio, parrot sprite, while setting them up in the scene where they belonged. Taryn also created the idea for game and its narrative. Taryn got the canvas and dialog box, the FollowCam script, and the collision of fences and buildings to work properly.
+In this project I was responsible for the GameManager, Wood, Parrot, Bird, and FollowCam scripts. I also created most of the map, made the prefab for the sign and other parrots, and added to the wood prefabs. I made the trail and particle systems and found the image for the dialog box. Taryn made the wood prefab, found the tilemap, audio, parrot sprite, while setting them up in the scene where they belonged. Taryn also created the idea for game and its narrative. Taryn got the canvas and dialog box, the FollowCam script, and the collision of fences and buildings to work properly. Taryn made the start button and got it work while I made the fire pit mechanism.
