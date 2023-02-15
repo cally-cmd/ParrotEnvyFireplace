@@ -8,7 +8,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
     private AudioSource audio;
     public GameObject button;
+    public GameObject fire;
+    public GameObject pit;
     public bool conversed;
+    public int collection;
     public GameObject dialogBox; // <a href=https://www.pngmart.com/image/53302 target="_blank">Text Box Frame PNG Transparent Image</a>
     public TextMeshProUGUI text;
 
@@ -16,6 +19,11 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(true);
         StopAllCoroutines();
         StartCoroutine(TypeText(s));
+    }
+
+    public void RevealPit() {
+        fire.SetActive(true);
+        pit.SetActive(true);
     }
 
     IEnumerator TypeText(string s) {
@@ -37,6 +45,8 @@ public class GameManager : MonoBehaviour
         conversed = false;
         dialogBox.SetActive(false);
         audio = GetComponent<AudioSource>();
+        pit.SetActive(false);
+        fire.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -45,6 +55,9 @@ public class GameManager : MonoBehaviour
         conversed = false;
         dialogBox.SetActive(false);
         audio = GetComponent<AudioSource>();
+        pit.SetActive(false);
+        collection = 0;
+        fire.SetActive(false);
     }
 
     // Update is called once per frame

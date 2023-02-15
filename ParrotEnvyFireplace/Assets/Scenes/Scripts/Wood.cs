@@ -24,7 +24,12 @@ public class Wood : MonoBehaviour
         if (GameManager.Instance.conversed) {
             print("Collected");
             Destroy(wood);
-            Instantiate(sparkles);
+            GameObject part = Instantiate(sparkles);
+            part.transform.position = transform.position;
+            GameManager.Instance.collection += 1;
+        }
+        if  (GameManager.Instance.collection == 5) {
+            GameManager.Instance.RevealPit();
         }
     }
 }
