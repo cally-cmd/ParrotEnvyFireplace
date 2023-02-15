@@ -6,6 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
+    private AudioSource audio;
 
     public bool conversed;
 
@@ -22,8 +23,10 @@ public class GameManager : MonoBehaviour
         text.text = "";
         foreach (char c in s.ToCharArray()) {
             text.text += c;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.05f);
         }
+        yield return new WaitForSeconds(10f);
+        DialogHide();
     }
 
     public void DialogHide() {
@@ -34,6 +37,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         conversed = false;
+        dialogBox.SetActive(false);
+        audio = GetComponent<AudioSource>();
+        StartCoroutine("Sound");
     }
 
     // Update is called once per frame
@@ -50,5 +56,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+    IEnumerator Sound(){
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
     }
 }

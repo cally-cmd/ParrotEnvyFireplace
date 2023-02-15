@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -115,7 +115,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca212b4ec87ebf43b55ae460c0aae92
+      internalID: 1004868410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 140
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cb8ecddecaa884e9f1efa4f56a8faa
+      internalID: 870276237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 140
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7c49cbeffa3e648b69bba359e12e18
+      internalID: -676076823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385ea80797cdc5b4c9785736ae74e996
+      internalID: -187752840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 70
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ee5d951ad686040b609f24f4bc846a
+      internalID: 2093438699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f6fdfc2454c50458f20b7c8309bf30
+      internalID: -2032137563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56f4387a849e5847a554fe9621f7b66
+      internalID: 1002255541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text-Box-Frame-PNG-Transparent-Image_7
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 0
+        width: 266.66666
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff51232a11495ec49b2499972816e2f9
+      internalID: 638738789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +294,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Text-Box-Frame-PNG-Transparent-Image_1: 870276237
+      Text-Box-Frame-PNG-Transparent-Image_0: 1004868410
+      Text-Box-Frame-PNG-Transparent-Image_5: -2032137563
+      Text-Box-Frame-PNG-Transparent-Image_2: -676076823
+      Text-Box-Frame-PNG-Transparent-Image_6: 1002255541
+      Text-Box-Frame-PNG-Transparent-Image_7: 638738789
+      Text-Box-Frame-PNG-Transparent-Image_3: -187752840
+      Text-Box-Frame-PNG-Transparent-Image_4: 2093438699
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

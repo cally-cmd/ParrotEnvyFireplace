@@ -19,7 +19,6 @@ public class Birds : MonoBehaviour
     }
 
     void OnMouseOver() {
-        print("Test!");
         GameManager.Instance.DialogShow(text);
         GameManager.Instance.conversed = true;
     }
