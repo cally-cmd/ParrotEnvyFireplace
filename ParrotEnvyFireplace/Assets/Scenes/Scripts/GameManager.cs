@@ -6,10 +6,10 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
-    private AudioSource audio;
     public GameObject button;
     public GameObject fire;
     public GameObject pit;
+    public GameObject audio;
     public bool conversed;
     public int collection;
     public GameObject dialogBox; // <a href=https://www.pngmart.com/image/53302 target="_blank">Text Box Frame PNG Transparent Image</a>
@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         button.gameObject.SetActive(false);
         pit.SetActive(false);
         fire.SetActive(false);
+        audio.SetActive(true);
     }
 
     // Start is called before the first frame update
@@ -53,10 +54,10 @@ public class GameManager : MonoBehaviour
     {
         conversed = false;
         dialogBox.SetActive(false);
-        audio = GetComponent<AudioSource>();
         pit.SetActive(false);
         collection = 0;
         fire.SetActive(false);
+        audio.SetActive(false);
     }
 
     // Update is called once per frame
@@ -73,11 +74,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-    }
-    IEnumerator Sound(){
-        yield return new WaitForSeconds(2f);
-        audio.Play();
-        yield return new WaitForSeconds(audio.clip.length);
     }
 
 }
