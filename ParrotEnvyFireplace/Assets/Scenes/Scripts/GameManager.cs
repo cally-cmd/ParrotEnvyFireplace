@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class GameManager : MonoBehaviour
         pit.SetActive(true);
     }
 
+    
+
     IEnumerator TypeText(string s) {
         text.text = "";
         foreach (char c in s.ToCharArray()) {
@@ -47,6 +50,12 @@ public class GameManager : MonoBehaviour
         pit.SetActive(false);
         fire.SetActive(false);
         audio.SetActive(true);
+    }
+
+    public void Restart(){
+        button.SetActive(true);
+        GameManager.Instance.Start();
+
     }
 
     // Start is called before the first frame update

@@ -23,13 +23,17 @@ public class Wood : MonoBehaviour
     void OnTriggerEnter2D() {
         if (GameManager.Instance.conversed) {
             print("Collected");
-            Destroy(wood);
+            wood.SetActive(false);
             GameObject part = Instantiate(sparkles);
             part.transform.position = transform.position;
             GameManager.Instance.collection += 1;
         }
         if  (GameManager.Instance.collection == 5) {
             GameManager.Instance.RevealPit();
+        }
+        if (GameManager.Instance.collection > 5){
+            GameManager.Instance.Restart();
+            wood.SetActive(true);
         }
     }
 }
